@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --font-title-size : 4.5vmin;
+    --font-primary-size : 2vmin;
+}
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CCE8CC;
+}
+
+/* Containers */
+.container{
+    height: 70vh;
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 1.5vmin;
+    background-color: #F6EFEE;
+}
+#titleContainer{
+    height: 15vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: var(--font-title-size);
+    }
+}
+
+/* Form Section */
+.form{
+    height: 35vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5vmin 0 6vmin 0;
+}
+.dropDown{
+    width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.select-container{
+    background-color: #E2B6CF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #E396DF;
+    border-radius: 0.5rem;
+    img{
+        height: 5vmin;
+        width: 5.5vmin;
+    }
+    select{
+        height: 4vmin;
+        width: 8vmin;
+        background-color: #E2B6CF;
+        border: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: var(--font-primary-size);
+    }
+}
+
+/* Result Section */
+.rslt-container{
+    height: 15vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sbmt{
+    height: 5vmin;
+    width: 36vw;
+    background-color: #E365C1;
+    border-radius: 0.5rem;
+    border: 1px solid #E396DF;
+    padding: 0.2rem 1rem;
+    font-size: var(--font-primary-size);
+}
+input{
+    height: 5vmin;
+    width: 32vw;
+    border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #E396DF;
+    padding: 0.2rem 1rem;
+    font-size: var(--font-primary-size);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Container/Box -->
+    <div class="container">
+        <!-- Title -->
+        <div id="titleContainer">
+            <h1 class="title">Currency Converter</h1>
+        </div>
+
+        <!-- Form -->
+        <form class="form">
+            <!-- Input Amount for Exchange -->
+            <input type="number" placeholder="Enter Amount" id = "amount">
+
+            <!-- dropDowns for Currencies -->
+            <div class="dropDown">
+                <div class="select-container">
+                    <!-- Flag Image -->
+                    <img src="https://flagsapi.com/IN/shiny/64.png" alt="img not available">
+                    <!-- dropDown -->
+                    <select name="from" id="from">
+                    </select>
+                </div>
+
+                <!-- Exchange symbol -->
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                <div class="select-container">
+                    <!-- Flag Image -->
+                    <img src="https://flagsapi.com/JP/shiny/64.png" alt="img not available">
+                    <!-- dropDown -->
+                    <select name="to" id="to">option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Result Section -->
+            <div class="rslt-container">
+                
+                <!-- Result is shown here -->
+                <input type="text" id="result" placeholder="Exchanged Value" disabled>
+
+                <!-- submit Button -->
+                <button class="sbmt">Get Exchange Value</button>
+            </div>   
+        </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
